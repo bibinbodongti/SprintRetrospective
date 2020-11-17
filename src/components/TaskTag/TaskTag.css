@@ -1,0 +1,21 @@
+.tagContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cardEditTag{
+    display: flex;
+    background-color: blue;
+}
+.wentWell{
+    background-color: "#E91E63";
+    padding: "0.5rem"
+}
+.toImprove{
+    background-color: "#FF5722";
+    padding: "0.5rem"
+}
+.actionItems{
+    background-color: "#009688";
+    padding: "0.5rem"
+}
