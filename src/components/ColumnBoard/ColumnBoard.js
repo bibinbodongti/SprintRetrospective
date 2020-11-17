@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Row, Container, InputGroup, FormControl, Button } from 'react-bootstrap'
 import TaskTagView from '../TaskTag/TaskTagView';
 import TaskTagEdit from '../TaskTag/TaskTagEdit';
-import { Droppable } from 'react-beautiful-dnd'
+import { Droppable } from 'react-beautiful-dnd';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const ColumnBoard = ({ col: { list, id },type,nameColumn,name,addTag,doneTag,editTag,edit ,delTag}) => {
     const [input, setInput] = useState('');
     //edit

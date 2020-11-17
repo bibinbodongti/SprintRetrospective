@@ -3,6 +3,7 @@ import { Form, Button } from 'react-bootstrap';
 import { Redirect } from "react-router-dom";
 import './Login.css';
 import {registerAPI} from '../../api/accountAPI';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const bcrypt = require('bcryptjs');
 
 const SignUp = () => {

@@ -6,6 +6,7 @@ import BoardCard from '../BoardCard/BoardCard'
 import handleCookie from '../../services/handleCookie';
 import AddNewBoardCard from '../BoardCard/AddNewBoardCard';
 import getListBoard,{deleteBoardAPI, addBoardAPI} from '../../api/boardAPI';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ManageListBoardCard = () => {
     const [listBoard, setListBoard] = useState([]);

@@ -3,6 +3,7 @@ import { Card, Button, CardGroup } from 'react-bootstrap';
 import {updateBoardAPI} from '../../api/boardAPI';
 import handleCookie from '../../services/handleCookie';
 import './BoardCard.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 //config datetime
 const moment = require('moment');
 moment.locale('vi');

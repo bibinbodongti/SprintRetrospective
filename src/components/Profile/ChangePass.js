@@ -3,6 +3,7 @@ import handleCookie from '../../services/handleCookie';
 import { Form, Button } from 'react-bootstrap';
 import { Redirect } from "react-router-dom";
 import { changePasswordAPI } from '../../api/accountAPI'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ChangePass = () => {
     const [oldPassword, setOldPassword] = useState('');

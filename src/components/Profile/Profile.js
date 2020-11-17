@@ -3,6 +3,7 @@ import { Form, Button } from 'react-bootstrap';
 import { Redirect } from "react-router-dom";
 import handleCookie from '../../services/handleCookie';
 import updateAccountAPI from '../../api/accountAPI';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Profile = () => {
     const [account, setAccount] = useState({ name: "", username: "", email: "" });

@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardGroup } from 'react-bootstrap'
 import './TaskTag.css';
 import { Draggable } from 'react-beautiful-dnd';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const TaskTagView = (props) => {

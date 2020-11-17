@@ -1,6 +1,7 @@
 import React from 'react';
 import {Nav,Navbar,Form, FormControl, Button } from 'react-bootstrap';
 import './Header.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Header=({isLogin,handleLogin})=>{

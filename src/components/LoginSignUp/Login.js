@@ -5,7 +5,7 @@ import './Login.css';
 import Auth from '../../api/authAPI';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import { GoogleLogin } from 'react-google-login';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Login = ({ isLogin, handleLogin,type }) => {

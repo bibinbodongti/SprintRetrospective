@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Button, InputGroup, FormControl } from 'react-bootstrap';
 import './BoardCard.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const AddNewBoardCard = ({ addBoard }) => {

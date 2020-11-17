@@ -3,6 +3,7 @@ import './BoardTopBar.css';
 import { Card, Button, CardGroup } from 'react-bootstrap';
 import { updateBoardAPI } from '../../api/boardAPI';
 import handleCookie from '../../services/handleCookie';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const BoardTopBar = ({sendMessage, board, shared }) => {
     const [isEditName, setIsEditName] = useState(false);

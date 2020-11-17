@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardGroup, Button } from 'react-bootstrap';
 import './TaskTag.css';
 import { Draggable } from 'react-beautiful-dnd';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const TaskTagEdit = (props) => {

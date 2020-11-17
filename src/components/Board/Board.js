@@ -6,6 +6,7 @@ import BoardTopBar from '../BoardTopBar/BoardTopBar';
 import { DragDropContext } from 'react-beautiful-dnd';
 import { delTagAPI, updateTagAPI,getMyTagsAPI } from '../../api/tagAPI';
 import {updateTypeAPI,getMyBoardAPI} from '../../api/boardAPI';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // socket
 import io from 'socket.io-client';
 
