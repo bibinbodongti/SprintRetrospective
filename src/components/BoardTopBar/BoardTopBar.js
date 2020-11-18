@@ -29,7 +29,7 @@ const BoardTopBar = ({sendMessage, board, shared }) => {
         });
     }
     const handleClickShareBoard = () => {
-        copyToClipboard('https://bibinbodongti.github.io/SprintRetrospective' + shared);
+        copyToClipboard('https://app-sprint-retrospective.herokuapp.com' + shared);
         setNoticeShared('Đường dẫn chia sẻ đã được lưu vào bộ nhớ đệm');
     }
     return (

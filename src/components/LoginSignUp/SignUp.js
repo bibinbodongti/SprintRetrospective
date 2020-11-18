@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { Redirect } from "react-router-dom";
 import './Login.css';
-import {registerAPI} from '../../api/accountAPI';
+import { registerAPI } from '../../api/accountAPI';
 import 'bootstrap/dist/css/bootstrap.min.css';
 const bcrypt = require('bcryptjs');
 
@@ -45,26 +45,32 @@ const SignUp = () => {
                 if (inputPassword !== inputRePassword) {
                     setNoticeForm('Mat khau nhap lai khong giong mat khau');
                     return;
-                }
-                hashPassword(inputPassword).then((pw) => {
-                    console.log(pw);
-                    try {
-                        registerAPI({username:inputUsername,name:inputName,email:inputEmail,pw:pw}).then((res)=>{
-                            if(res) {
-                                setNoticeForm('Register success');
-                                setInputUsername('');
-                                setInputPassword('');
-                                setInputRePassword('');
-                                setInputName('');
-                                setInputEmail('');
+                } else {
+                    if (!inputEmail.includes('@')) {
+                        setNoticeForm('Email không đúng định dạng');
+                        return;
+                    } else {
+                        hashPassword(inputPassword).then((pw) => {
+                            console.log(pw);
+                            try {
+                                registerAPI({ username: inputUsername, name: inputName, email: inputEmail, pw: pw }).then((res) => {
+                                    if (res) {
+                                        setNoticeForm('Register success');
+                                        setInputUsername('');
+                                        setInputPassword('');
+                                        setInputRePassword('');
+                                        setInputName('');
+                                        setInputEmail('');
+                                    }
+                                    else setNoticeForm('Register fail');
+                                })
+                            } catch (error) {
+                                console.log("Error: " + error.message);
+                                setNoticeForm('Register fail');
                             }
-                            else setNoticeForm('Register fail');
                         })
-                    } catch (error) {
-                        console.log("Error: " + error.message);
-                        setNoticeForm('Register fail');
                     }
-                })
+                }
             }
         }
     }
