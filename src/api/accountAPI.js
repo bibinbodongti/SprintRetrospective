@@ -40,7 +40,9 @@ export const registerAPI = (data) => {
         fetch("https://server-sprintretrospective.herokuapp.com/accounts/register", requestOptions)
             .then(response => response.text())
             .then(result => {
-                resolve(result);
+                console.log(result);
+                if(result==='true') resolve(true);
+                else resolve(false);
             })
             .catch(error => console.log('error', error));
     })

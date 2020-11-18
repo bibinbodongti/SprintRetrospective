@@ -54,7 +54,7 @@ const SignUp = () => {
                             console.log(pw);
                             try {
                                 registerAPI({ username: inputUsername, name: inputName, email: inputEmail, pw: pw }).then((res) => {
-                                    if (res) {
+                                    if (res===true) {
                                         setNoticeForm('Register success');
                                         setInputUsername('');
                                         setInputPassword('');
