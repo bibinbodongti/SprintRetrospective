@@ -157,6 +157,7 @@ const Board = ({ match }) => {
             // If start is different from end, we need to update multiple columns
             // Filter the start list like before
             updateType(end.id === 'wentwell' ? 1 : end.id === 'toimprove' ? 2 : 3, start.list[source.index].content);
+            sendMessage();
             const newStartList = start.list.filter(
                 (_, idx) => idx !== source.index
             )
